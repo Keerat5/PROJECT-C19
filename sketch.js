@@ -32,6 +32,10 @@ function preload(){
   gameOverImg = loadImage("gameOver.png");
   restartImg = loadImage("restart.png");
   
+  jump = loadSound("jump.mp3");
+  die = loadSound("die.mp3");
+  checkpoint = loadSound("checkPoint.mp3");
+  
 }
 
 function setup() {
@@ -65,10 +69,6 @@ function setup() {
   restart.visible = false;
   
   score = 0;
-  
-  jump = loadSound("jump.mp3");
-  die = loadSound("die.mp3");
-  checkpoint = loadSound("checkPoint.mp3");
 }
 
 function draw() {
